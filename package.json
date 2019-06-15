@@ -8,7 +8,7 @@
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require @babel/register",
     "test:coverage": "nyc npm test",
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint && npm run test:coverage"
+    "prepush": "npm run lint"
   },
   "nyc": {
     "check-coverage": true,
@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/jpedroschmitz/js-tdd#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.3.4",
     "@babel/register": "^7.0.0",
     "chai": "^4.2.0",
